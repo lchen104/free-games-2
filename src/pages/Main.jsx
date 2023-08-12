@@ -185,7 +185,7 @@ const Main = () => {
 
 
   return (
-    <div className='container'>
+    <div className='container mt-4'>
 
     <Form 
         handlePlatform={handlePlatform}
@@ -199,7 +199,7 @@ const Main = () => {
         setSort={setSort}
       />
 
-      {/* <Heading games={favorites} heading={'Featured'} /> */}
+      <Heading games={favorites} heading={'Featured'} />
       <StyledGameDetails>
         <GameDetails gameDetail={gameDetail} setGameDetail={setGameDetail} gameId={gameId} setGameId={setGameId}/>
       </StyledGameDetails>

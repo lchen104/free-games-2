@@ -2,7 +2,9 @@ import React from 'react'
 
 const Games = () => {
   return (
-    <div>Games</div>
+    <div className='container mt-4'>
+      <h1>Games</h1>
+    </div>
   )
 }
 
