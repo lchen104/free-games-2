@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../free-games"
+		},
+		{
+			"path": "../../../crypto-prices"
+		}
+	],
+	"settings": {}
+}
