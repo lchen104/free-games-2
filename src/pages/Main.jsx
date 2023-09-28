@@ -164,6 +164,7 @@ const Main = () => {
       }    
   }
 
+  
   useEffect(() => {
     // const randomId = Math.floor(Math.random() * games.length)
     // console.log(games.length)
@@ -174,14 +175,6 @@ const Main = () => {
     // alert(id)
     setGameId(id)
   }
-
-
-
-
-
-
-
-
 
 
   return (
