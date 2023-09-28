@@ -192,10 +192,10 @@ const Main = () => {
         setSort={setSort}
       />
 
-      <Heading games={favorites} heading={'Featured'} />
+      {/* <Heading games={favorites} heading={'Featured'} />
       <StyledGameDetails>
         <GameDetails gameDetail={gameDetail} setGameDetail={setGameDetail} gameId={gameId} setGameId={setGameId}/>
-      </StyledGameDetails>
+      </StyledGameDetails> */}
 
       {/* {
         favorites.length > 0 && ( // checks to make sure favorites contains somthing before we render the favorites heading
