@@ -197,24 +197,24 @@ const Main = () => {
         <GameDetails gameDetail={gameDetail} setGameDetail={setGameDetail} gameId={gameId} setGameId={setGameId}/>
       </StyledGameDetails>
 
-      {
-        favorites.length > 0 && ( // checks to make sure favorites contains somthing before we render the favorites heading
+      {/* {
+        favorites.length > 0 && ( // checks to make sure favorites contains somthing before we render the favorites heading */}
           <StyledGameList>
             <Heading games={favorites} heading={'Favorites'} />
             <GameList games={favorites} handleFavoritesClick={handleRemoveFavorites} favoriteComponent={RemoveFavorites} />
           </StyledGameList>
-        )
-      }
+        {/* )
+      } */}
 
-      {
-        games.length > 0 && ( // checks to make sure games contains somthing before we render the games heading
+      {/* {
+        games.length > 0 && ( // checks to make sure games contains somthing before we render the games heading */}
           <StyledGameList>
             <Heading games={games} heading={'Games'} />
             <GameList games={games} handleFavoritesClick={handleAddFavorites} favoriteComponent={AddFavorites} handleGameId={handleGameId} />
           </StyledGameList>          
-        )
+        {/* )
 
-      }
+      } */}
 
 
       <StyledFooter>
