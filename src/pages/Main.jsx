@@ -33,15 +33,13 @@ const Main = () => {
   const [gameDetail, setGameDetail] = useState([])
   const [gameId, setGameId] = useState('452')
   
-  const [games, setGames] = useState([]);
-  const [favorites, setFavorites] = useState([]);
-  
   // api doc https://rapidapi.com/digiwalls/api/free-to-play-games-database/
 
   const gameDetailAPI = 'https://free-to-play-games-database.p.rapidapi.com/api/game'
   const gameList = 'https://free-to-play-games-database.p.rapidapi.com/api/games'
 
-
+  const [games, setGames] = useState([]);
+  const [favorites, setFavorites] = useState([]);
   const [endpoint, setEndpoint] = useState(gameList)
 
   // function to load games from API call
@@ -199,24 +197,24 @@ const Main = () => {
         <GameDetails gameDetail={gameDetail} setGameDetail={setGameDetail} gameId={gameId} setGameId={setGameId}/>
       </StyledGameDetails>
 
-      {
+      {/* {
         favorites.length > 0 && ( // checks to make sure favorites contains somthing before we render the favorites heading
           <StyledGameList>
             <Heading games={favorites} heading={'Favorites'} />
             <GameList games={favorites} handleFavoritesClick={handleRemoveFavorites} favoriteComponent={RemoveFavorites} />
           </StyledGameList>
         )
-      }
+      } */}
 
-      {
-        games.length > 0 && ( // checks to make sure games contains somthing before we render the games heading
+      {/* {
+        games.length > 0 && ( // checks to make sure games contains somthing before we render the games heading */}
           <StyledGameList>
             <Heading games={games} heading={'Games'} />
             <GameList games={games} handleFavoritesClick={handleAddFavorites} favoriteComponent={AddFavorites} handleGameId={handleGameId} />
           </StyledGameList>          
-        )
+        {/* )
 
-      }
+      } */}
 
 
       <StyledFooter>

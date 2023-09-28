@@ -14,9 +14,9 @@ const GameList = ({games, handleFavoritesClick, favoriteComponent, handleGameId}
                         <div className='item image-container' key={index}>
                             {/* <a href={game.game_url} target='_blank' ><img src={game.thumbnail} alt={game.title} /></a> */}
                             <a href={game.game_url} target='_blank' ><img src={game.thumbnail} alt={game.title} onClick={() => handleGameId(game.id)} /></a>
-                            <div onClick={() => handleFavoritesClick(game)} className='overlay'>
+                            {/* <div onClick={() => handleFavoritesClick(game)} className='overlay'>
                                 <FavoriteComponent />
-                            </div>
+                            </div> */}
                         </div>
                             
                     ))
